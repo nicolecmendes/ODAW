@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  <title>Pizzaria</title>
+</head>
+  <body>
+
+    <!-- barra menu -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#"><img src="imagens/logo.png" width="175px" alt="Logo da Pizzaria L'Atelier dei Sapori"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Alterna navegação">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link active" href="home.html" style="font-family: 'Garamond', Times, serif; font-size: 22px;">Home</a>
+          <a class="nav-item nav-link" href="sobre.html" style="font-family: 'Garamond', Times, serif; font-size: 22px;">Sobre Nós</a>
+          <a class="nav-item nav-link" href="cardapio.html" style="font-family: 'Garamond', Times, serif; font-size: 22px;">Cardápio</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- conteudo principal -->
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <!-- lado esquerdo - imagens -->
+          <h2 class="text-center" style="font-family: 'Garamond', Times, serif;">Para realizar o pedido, precisamos de algumas inforações:</h2>
+          <form onsubmit="return TestaVal()" name="TesteSub" style="font-family: 'Garamond', Times, serif; font-size: 22px;">
+            <div class="form-row">
+                <div class="col-md-6 mb-6">
+                    <label for="Nome">Nome Completo</label>
+                    <input type="text" class="form-control" id="Nome" placeholder="Nome" required>
+                    <div class="valid-feedback">
+                      Tudo certo!
+                    </div>
+                  </div>
+              <div class="form-group col-md-6">
+                <label for="Email">Email</label>
+                <input type="email" class="form-control" id="Email" placeholder="Email">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="Senha">Senha</label>
+                <input type="password" class="form-control" id="Senha" placeholder="Senha">
+              </div>
+            </div>
+            <div class="form-group col-md-6">
+              <label for="Endereco">Endereço</label>
+              <input type="text" class="form-control" id="Endereco" placeholder="Rua dos Bobos, nº 0">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="Adicionais">Informações Adicionais</label>
+              <input type="text" class="form-control" id="Adicionais" placeholder="Apartamento, hotel, casa, etc.">
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="Cidade">Cidade</label>
+                <input type="text" class="form-control" id="Cidade">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="Pagamento">Forma de Pagamento</label>
+                <select id="Pagamento" class="form-control">
+                  <option selected>Escolher...</option>
+                  <option>Cartão de Crédito</option>
+                  <option>Cartão de Débito</option>
+                  <option>Pix</option>
+                  <option>Dinheiro</option>
+                </select>
+              </div>
+            </div>
+            <br>
+            <button type="submit" class="btn btn-outline-success">Salvar Informações</button>
+          </form>
+
+          <script>
+            function TestaVal() {
+              let campo1 = document.TesteSub.Nome.value;
+              let campo2 = document.TesteSub.Email.value;
+              let campo3 = document.TesteSub.Senha.value;
+              let campo4 = document.TesteSub.Endereco.value;
+              let campo5 = document.TesteSub.Adicionais.value;
+              let campo6 = document.TesteSub.Cidade.value;
+              let campo7 = document.TesteSub.Pagamento.value;
+        
+              if (campo1 === "" || campo2 === "" || campo3 === "" || campo4 === "" || campo5 === "" || campo6 === "" || campo7 === "Escolher...") {
+                alert("Para realizar o cadastro, é necessário que todos os campos sejam respondidos.");
+                return false;
+              } else {
+                alert("Cadastro realizado com sucesso");
+                return true;
+              }
+            }
+          </script>
+
+      </div>
+      
+      </div>
+    </div>
+
+  </body>
+</html>

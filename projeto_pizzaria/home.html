@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <title>Pizzaria</title>
+  </head>
+
+  <body>
+
+    <!-- barra menu -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#"><img src="imagens/logo.png" width="175px" alt="Logo da Pizzaria L'Atelier dei Sapori"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Alterna navegação">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link active" href="home.html" style="font-family: 'Garamond', Times, serif; font-size: 22px;">Home</a>
+          <a class="nav-item nav-link" href="sobre.html" style="font-family: 'Garamond', Times, serif; font-size: 22px;">Sobre Nós</a>
+          <a class="nav-item nav-link" href="cardapio.html" style="font-family: 'Garamond', Times, serif; font-size: 22px;">Cardápio</a>
+          <a class="nav-item nav-link" href="cadastro.html" style="font-family: 'Garamond', Times, serif; font-size: 22px;">Cadastre-se</a>
+          <a class="nav-item nav-link" href="login.html" style="font-family: 'Garamond', Times, serif; font-size: 22px;">Entrar</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- conteudo principal -->
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <!-- lado esquerdo - imagens -->
+          <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="imagens/lugar1.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="imagens/pizza1.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="imagens/pizza.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <div class="col" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+            <!-- lado direito - descrição-->
+          <h2 class="text-center" style="font-family: 'Garamond', Times, serif;">Conheça a nossa pizzaria</h2>
+            <hr class="linha-grande">
+            <p class="text-center" style="font-family: 'Garamond', Times, serif; font-size: 22px;">
+                Na Pizzaria L'Atelier dei Sapori, a arte e a culinária se encontram para
+                criar uma experiência gastronômica inesquecível. Nossos chefs são
+                verdadeiros artistas que combinam ingredientes frescos e autênticos para
+                criar pizzas e massas que são obras-primas culinárias. Cada prato é
+                cuidadosamente preparado para capturar a essência dos sabores italianos
+                tradicionais, enquanto adiciona um toque de inovação e criatividade. Em
+                nosso ambiente acolhedor e elegante, você pode desfrutar de uma refeição
+                que é tanto uma celebração do paladar quanto uma homenagem à arte da
+                culinária italiana.
+            </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+          <!-- lado esquerdo - localização -->
+          <h2 class="text-center" style="font-family: 'Garamond', Times, serif;">L'Atelier dei Sapori</h2>
+          <address class="text-center" style="font-family: 'Garamond', Times, serif; font-size: 22px;">
+              Via della Rosa, 123 <br>
+              00123, Trastevere <br>
+              Roma, Itália
+          </address>
+        </div>
+        <div class="col" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+          <!-- meio - horario -->
+          <h2 class="text-center" style="font-family: 'Garamond', Times, serif;">Horário de Funcionamento</h2>
+          <p class="text-center" style="font-family: 'Garamond', Times, serif; font-size: 22px;">
+            Segunda a Quinta: 18:00 - 00:00<br>
+            Sexta e Sábado: 18:00 - 02:00 <br>
+            Domingos e feriados: 11:00 - 14:30</p>
+          <p id="horarioFuncionamento" class="text-center" style="font-family: 'Garamond', Times, serif; font-size: 22px;"></p>
+        </div>
+        <div class="col" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+          <!-- lado direito - contato-->
+          <br>
+          <h2 class="text-center" style="font-family: 'Garamond', Times, serif;">Contato</h2>
+            <i class="text-center" style="font-family: 'Garamond', Times, serif; font-size: 22px;">Entre em contato conosco para fazer pedidos, tirar dúvidas ou reservar uma mesa.</i>
+            <br>
+            <h4 style="font-family: 'Garamond', Times, serif; ">Telefone:</h4>
+            <p style="font-family: 'Garamond', Times, serif; font-size: 22px;">(12) 3456-7890</p>
+            <h4 style="font-family: 'Garamond', Times, serif;">E-mail:</h4>
+            <p style="font-family: 'Garamond', Times, serif; font-size: 22px;">contato@pizzaria.com</p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // função para verificar se a pizzaria está aberta
+      function verificarHorarioFuncionamento() {
+        const agora = new Date();
+        const diaSemana = agora.getDay(); 
+        const horaAtual = agora.getHours();
+        const minutosAtual = agora.getMinutes();
+
+        // horários de funcionamento
+        const horarios = {
+          segunda_a_quinta: { inicio: 18, fim: 0 },
+          sexta_sabado: { inicio: 18, fim: 2 },
+          domingo_feriados: { inicio: 11, fim: 14 },
+        };
+
+        let mensagem = '';
+        if (diaSemana >= 1 && diaSemana <= 4) {
+          if (horaAtual >= horarios.segunda_a_quinta.inicio || horaAtual < horarios.segunda_a_quinta.fim) {
+            mensagem = 'Estamos abertos agora!';
+          } else {
+            mensagem = 'Fechado no momento';
+          }
+        } else if (diaSemana === 5 || diaSemana === 6) {
+          if (horaAtual >= horarios.sexta_sabado.inicio || horaAtual < horarios.sexta_sabado.fim) {
+            mensagem = 'Estamos abertos agora!';
+          } else {
+            mensagem = 'Fechado no momento';
+          }
+        } else if (diaSemana === 0) {
+          if (horaAtual >= horarios.domingo_feriados.inicio && horaAtual < horarios.domingo_feriados.fim) {
+            mensagem = 'Estamos abertos agora!';
+          } else {
+            mensagem = 'Fechado no momento';
+          }
+        } else {
+          mensagem = 'Fechado no momento';
+        }
+
+        document.getElementById('horarioFuncionamento').textContent = mensagem;
+      }
+      verificarHorarioFuncionamento();
+    </script>
+
+  </body>
+</html>

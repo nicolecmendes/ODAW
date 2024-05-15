@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <title>Pizzaria</title>
+  </head>
+
+  <body>
+
+    <!-- barra menu -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#"><img src="imagens/logo.png" width="175px" alt="Logo da Pizzaria L'Atelier dei Sapori"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Alterna navegação">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link active" href="home.html" style="font-family: 'Garamond', Times, serif; font-size: 22px;">Home</a>
+          <a class="nav-item nav-link" href="sobre.html" style="font-family: 'Garamond', Times, serif; font-size: 22px;">Sobre Nós</a>
+          <a class="nav-item nav-link" href="cardapio.html" style="font-family: 'Garamond', Times, serif; font-size: 22px;">Cardápio</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- conteudo principal -->
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <!-- lado esquerdo - imagens -->
+          <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="imagens/lugar1.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="imagens/pizza1.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="imagens/pizza.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <div class="col" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+            <!-- lado direito - descrição-->
+          <h2 class="text-center" style="font-family: 'Garamond', Times, serif;">História da Pizzaria</h2>
+            <p class="text-center" style="font-family: 'Garamond', Times, serif; font-size: 22px;">
+                Fundada em 1985 por Giovanni e Maria Ricci, a Pizzaria L'Atelier dei Sapori começou como
+                um pequeno estabelecimento no coração de Trastevere, Roma.
+                Inspirados pelas receitas tradicionais da família e pela paixão pela culinária italiana,
+                o casal transformou sua humilde pizzaria em um renomado estabelecimento,
+                conhecido por servir as pizzas mais autênticas e saborosas de toda Roma.
+            </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+          <!-- lado esquerdo - missão -->
+          <h2 class="text-center" style="font-family: 'Garamond', Times, serif;">Nossa Missão</h2>
+          <p class="text-center" style="font-family: 'Garamond', Times, serif; font-size: 22px;">
+            Servir pizzas autênticas, preparadas com paixão e ingredientes da mais alta qualidade,
+            proporcionando uma experiência culinária inesquecível para todos os nossos clientes.
+          </p>
+        </div>
+        <div class="col" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+          <!-- meio - cardapio -->
+          <div class="card" style="width: 18rem;">
+            <img src="imagens/pedir.jpg" class="card-img-top" alt="...">
+            <div class="card-body" style="display: flex; flex-direction: column; justify-content: center; align-items: center; font-family: 'Garamond', Times, serif;">
+              <h5 class="card-title">Monte a pizza do seu jeitinho</h5>
+              <p class="card-text">Explore nosso delicioso cardápio e desfrute de uma experiência gastronômica única</p>
+              <a href="cardapio.html" class="btn btn-primary">Cardápio</a>
+            </div>
+          </div>
+        </div>
+        <div class="col" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+          <!-- lado direito - ingredientes-->
+          <h2 class="text-center" style="font-family: 'Garamond', Times, serif;">Nossos Ingredientes</h2>
+          <p class="text-center" style="font-family: 'Garamond', Times, serif; font-size: 15px;">Na Pizzaria L'Atelier dei Sapori, a qualidade está no centro de tudo o que fazemos.
+            Selecionamos cuidadosamente nossos ingredientes:</p>
+          <p style="font-family: 'Garamond', Times, serif; font-size: 22px;">
+            <li class="text-center" style="font-family: 'Garamond', Times, serif; font-size: 18px">
+                <strong>Tomates San Marzano:</strong> Cultivados nas ricas terras vulcânicas ao redor de Nápoles,
+                são conhecidos por seu sabor rico e doçura.
+            </li>
+            <br>
+            <li class="text-center" style="font-family: 'Garamond', Times, serif; font-size: 18px">
+                <strong>Mozzarella di Bufala:</strong> Diretamente da Campânia, esta mozzarella fresca é feita a
+                partir do leite de búfala, oferecendo uma textura rica e um sabor inigualável.
+            </li>
+            <br>
+            <li class="text-center" style="font-family: 'Garamond', Times, serif; font-size: 18px">
+                <strong>Farinha Tipo 00:</strong> Importada diretamente de moinhos tradicionais italianos, nossa
+                farinha é o que dá à nossa base de pizza sua textura leve e crocante.
+            </li>
+            <br>
+            <li class="text-center" style="font-family: 'Garamond', Times, serif; font-size: 18px">
+                <strong>Azeite Extra Virgem:</strong> Prensado a frio e originário da Toscana, nosso azeite adiciona
+                um toque final perfeito às nossas pizzas.
+            </li>
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
